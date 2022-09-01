@@ -1,0 +1,12 @@
+# http routing section
+http:
+  routers:
+    to-service-app1:
+      rule: "Host(`ecs1.service1.local`)"
+      service: service-app1
+
+  services:
+    service-app1:
+      loadBalancer:
+        servers:
+        - url: http://192.168.200.11
