@@ -10,3 +10,4 @@ http:
       loadBalancer:
         servers:
         - url: http://192.168.200.11
+        - url: http://192.168.200.12
